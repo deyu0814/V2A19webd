@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	width:1000px;
+	height:1000px;
+	position: relative;
+	top:500px;
+	left:50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0 10px 40px rgb(40,40,40);
+	margin:2%;
+	
+}
+main img{
+	height: 100%;
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	background: #E90015;
+	cursor: pointer;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:#FFFFFF;
+	text-align: center;
+}
+.content h1{
+	font-size: 2rem;
+}
+.container:hover .overlay{
+	opacity:0.8;
+}
+body{
+	font-family:"Yu Gothic", sans-serif;
+	background-image: url("../images/cover.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header{
+	background-color:#202020;
+	height:150px;
+	display:flex;
+	align-items:center
+}
+.logo img{
+	height:100px;
+	margin-left:10%;
+}
+.menu{
+	font-size: 150%;
+	margin-left:67%;
+}
+.menu a{
+	
+	margin-left:0.5px;
+}
+.menu a:link{
+	text-decoration:none;
+	color:#ffffff
+}
+.menu a:visited{
+	text-decoration:none;
+	color:#ffffff;
+	background-color:red;
+}
+.menu a:hover{
+	text-decoration:underline;
+	color:#E90015;
+}
+main h1{
+	font-size: 4rem;
+	text-align: center;
+}
+main h2{
+	text-align: center;
+	background: #CDCDCD;
+}
+main h3{
+	text-align: center;
+	text-decoration: underline;
+}
+.committee-container{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin:2%;
+}
+.committee-container figure{
+	border-width:1px;
+	border-style:thick;
+	margin:0 100px;
+	text-align:center;
+	background: #FFFFFF
+}
+.committee-container a:link{
+	text-decoration:none;
+	color:#000000
+}
+.committee-container a:visited{
+	text-decoration:none;
+	color:#000000;
+	background-color:red;
+}
+.committee-container a:hover{
+	text-decoration:underline;
+	color:#E90015;
+}
+.committee-container img{
+	width: 400px;
+	height: 300px;
+	object-fit:contain;
+}
+.photolinks{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin:2%;
+}
+.calendar{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin:2%;
+}
+.footer{
+	background-color:#202020;
+	height:100px;
+	display:flex;
+	align-items:center;
+}
+.footer p{
+	margin-left: 1%;
+	color:#FFFFFF;
+}
